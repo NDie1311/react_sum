@@ -1,9 +1,7 @@
-export const Sum = ({ a = 0, b = 0 }) => {
-  const total = a + b;
+import React from 'react';
 
-  return (
-    <p>
-      Sum of {a} and {b} is {total}
-    </p>
-  );
+export const Sum = ({ a = 0, b = 0 }) => {
+  const total = Number(a) + Number(b);
+
+  return <p>{`Sum of ${a} and ${b} is ${total}`}</p>;
 };
